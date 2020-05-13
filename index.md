@@ -12,4 +12,4 @@
       <p><b>邮箱：944706967@qq.com</b></p>
       <p><b>地址：南京市玄武区孝陵卫200号南京理工大学明理居
     <td width="50%">
-      <img src="/timg.jpg" width="100%">      
+      <img src="/timg.jpg" width="100%">     （这是一张薛之谦的图片） 
