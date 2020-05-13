@@ -8,7 +8,7 @@
       <p><b>地址：南京市玄武区孝陵卫200号南京理工大学明理居
     </td>
     <td width="25%">
-      <img src="/timg.jpg" width="100%">      % 插入证件照代码
+      <img src="/timg.jpg" width="100%">      
     </td>
   </tr>
 </table>
