@@ -9,6 +9,3 @@
     </td>
     <td width="25%">
       <img src="/timg.jpg" width="100%">      
-    </td>
-  </tr>
-</table>
