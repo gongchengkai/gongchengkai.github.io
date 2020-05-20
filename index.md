@@ -1,4 +1,3 @@
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,22 +33,6 @@
   <tr>
     <th scope="row">学校网址</th>
     <td align="center"><a href="http://www.njust.edu.cn">南理工官网</a></td>
-  </tr>
-  <tr>
-    <th scope="row">&nbsp;</th>
-    <td align="center">&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">&nbsp;</th>
-    <td align="center">&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">&nbsp;</th>
-    <td align="center">&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">&nbsp;</th>
-    <td align="center">&nbsp;</td>
   </tr>
 </table>
 </body>
