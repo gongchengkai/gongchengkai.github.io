@@ -1,15 +1,56 @@
-<table border="0">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<img src="../../Documents/Tencent Files/944706967/FileRecv/MobileFile/IMG_20200430_162749.jpg" width="223" height="232" />
+<table width="316" border="1">
+  <caption>
+    个人介绍
+  </caption>
   <tr>
-    <td width="75%">
-      <h1>龚成楷</h1>
-      <p><b>性别：男</b></p>
-      <p><b>民族：汉</b></p>
-      <p><b>家庭地址：湖北省武汉市</b></p>
-      <p><b>学历：本科</b></p>
-      <p><b>南京理工大学经济管理学院</b></p>
-      <p><b>研究方向：网页设计与制作，文本挖掘</b></p>
-      <p><b>指导老师：章成志</b></p>
-      <p><b>邮箱：944706967@qq.com</b></p>
-      <p><b>地址：南京市玄武区孝陵卫200号南京理工大学明理居
-    <td width="50%">
-      <img src="/timg.jpg" width="100%">     （这是一张薛之谦的图片） 
+    <th scope="row">姓名</th>
+    <td align="center">龚成楷</td>
+  </tr>
+  <tr>
+    <th scope="row">性别</th>
+    <td align="center">男</td>
+  </tr>
+  <tr>
+    <th scope="row">年龄</th>
+    <td align="center">20</td>
+  </tr>
+  <tr>
+    <th scope="row">籍贯</th>
+    <td align="center">湖北武汉</td>
+  </tr>
+  <tr>
+    <th scope="row">学校</th>
+    <td align="center">南京理工大学</td>
+  </tr>
+  <tr>
+    <th scope="row">学校网址</th>
+    <td align="center"><a href="http://www.njust.edu.cn">南理工官网</a></td>
+  </tr>
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
