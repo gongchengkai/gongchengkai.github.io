@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<img src="../../Documents/Tencent Files/944706967/FileRecv/MobileFile/IMG_20200430_162749.jpg" width="223" height="232" />
+<img src="kk.jpg" width="223" height="232" />
 <table width="316" border="1">
   <caption>
     个人介绍
