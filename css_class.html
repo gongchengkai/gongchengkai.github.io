@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 681px;
+	height: 115px;
+	z-index: 1;
+	left: 531px;
+	top: 3px;
+	font-weight: bold;
+	color: #00F;
+	font-size: 24px;
+}
+.dingyi {
+	font-size: 24px;
+	font-weight: 400;
+	color: #F00;
+	letter-spacing: normal;
+	word-spacing: normal;
+	height: auto;
+	width: auto;
+}
+.neirong {
+	font-size: 18px;
+	font-weight: 500;
+	color: #FF0;
+	text-decoration: underline;
+	background-color: #96F;
+}
+.youquedian {
+	font-size: 18px;
+	font-weight: 600;
+	color: #00F;
+}
+</style>
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="apDiv1">信息检索的模型(spry可能在IE浏览器中无法加载)</div>
+<div id="TabbedPanels1" class="TabbedPanels">
+  <ul class="TabbedPanelsTabGroup">
+    <li class="TabbedPanelsTab" tabindex="0">布尔模型</li>
+    <li class="TabbedPanelsTab" tabindex="0">向量空间模型</li>
+    <li class="TabbedPanelsTab" tabindex="0">概率模型</li>
+</ul>
+  <div class="TabbedPanelsContentGroup">
+    <div class="TabbedPanelsContent">
+      <div id="Accordion1" class="Accordion" tabindex="0">
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">1.定义</div>
+          <div class="AccordionPanelContent">
+            <p class="dingyi">用户通过一系列关键词来 阐明自己的信息需求①， 信息检索系统则检索与用 户查询最为匹配（接近） 的文献②，同时借助某种 相关性指标对检索出的文 献进行排序③</p>
+          </div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">2.内容</div>
+          <div class="AccordionPanelContent">
+            <p class="neirong">用户的需求表示：包括用户查询信息的获取与表示；</p>
+            <p class="neirong">文档的表示：即文档内容的识别和表示； <br />
+              匹配机制：文档和用户需求之间的相关性 排序的准则和函数表示，其中相关性排序 的准则决定了信息检索系统的基本性能； <br />
+            反馈修正：根据检索结果对查询表示进行扩充与参数优化，以提高系统性能。</p>
+          </div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">3.优缺点</div>
+          <div class="AccordionPanelContent">
+            <ol>
+              <li class="youquedian">布尔模型的优点：简单、易理解、易实现和快速检索。 </li>
+              <li class="youquedian">布尔模型的缺点： </li>
+            </ol>
+            <p class="youquedian">布尔检索是基于0-1二值判定标准的，判断 的结果是：文献之间要么相关，要么不相关 <br />
+              检索结果也不能按用户定义的重要性排序输出，用户只能从头到尾浏览输出结果才能知道哪些文献更适合自己的需要 <br />
+              对于&ldquo;或&rdquo;组配的提问，只包含提问式中 一个标引词的文献与包含提问式中几个标 引词的文献被认为是同样重要； <br />
+              对于&ldquo;与&rdquo;组配的提问，包含多个标引词 的文献又被认为与不包含任何标引词的文 献同样不相关； <br />
+              最大不足：没有考虑相关性程度 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="TabbedPanelsContent">
+      <div id="Accordion2" class="Accordion" tabindex="0">
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">1.定义</div>
+          <div class="AccordionPanelContent">
+            <p class="dingyi">对一个文档集而言，通过文档标引，可以将每一篇文档转换成特定的标引项来表示。 如果将每一个标引项看作是多维空间中的一维，  则由这些标引项组成的集合就定义了一个多维 向量空间。 文档集合中的任一文档都可以表示成为这一多 维空间中的一个向量，这个空间就称为&ldquo;文档 空间&rdquo;。</p>
+            <p class="dingyi">（1）以特征项作为文 档表示的坐标， 特征项可以选择  字、词和词组等， 表示向量中的各 个分量 </p>
+            <p class="dingyi">（2）用向量的形式把 文档表示为多维 空间中的一个点 </p>
+          </div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">2.内容</div>
+          <div class="AccordionPanelContent"><span class="neirong">该模型采用一组标引项首先将查询和待检索文档集中的文档分别表示查询向量和文档向量，然后通过计算查询向量和文档向量之间的相似度，并根据求得的相似度大小对文档检索结果进行排序，超过一定阈值就作为检索结果加以输出。 </span></div>
+        </div>
+        <div class="youquedian">
+          <div class="AccordionPanelTab">3.优缺点</div>
+          <div class="AccordionPanelContent"><span class="youquedian"><span class="youquedian"><span class="youquedian">1.向量空间检索模型的优点
+            
+            </span></span></span>
+            <p align="left">⚫根据文档和查询之间的相似度对文献进行 排序，有效地提高了检索效果； <br />
+              ⚫对标引词的权重进行了改进，从而进一步 提高了检索的准确程度； <br />
+              ⚫把文档和查询本身简化为标引词及其权重 集合的向量表示，把对文档内容和查询要 求的处理简化为向量空间中向量的运算； <br />
+              ⚫可以实现文档的自动分类。 </p>
+            <p align="left">2.向量空间检索模型的缺点 </p>
+            <p align="left" class="youquedian">⚫相似度的计算量大，并且当有新文档加入时，则必须重新计算词的权值 <br />
+              ⚫标引词被认为是相互正交，太理想化，降低了检索的准确性 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="TabbedPanelsContent">
+      <div id="Accordion3" class="Accordion" tabindex="0">
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">1.定义</div>
+          <div class="AccordionPanelContent">
+            <p class="dingyi">&ldquo;相关性&rdquo;是没有一个唯一、准确的定义。 </p>
+            <p class="dingyi">主要原因是由于文档对于用户查询的相关性 具有随机性和不确定性。 <br />
+              可以将一篇文档作为相关文档的可能大小是 看成是一个随机事件，这样该事件的概率可 以用来描述文档的相关程度。 <br />
+              概率检索模型将文档向量与查询向量间的相关 度概率化，在概率论的框架下解决信息检索的 问题。</p>
+          </div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">2.内容</div>
+          <div class="AccordionPanelContent"><span class="neirong">二值独立概率模型的定义 定义基本假设前提
+            </span>
+            <p><span class="neirong">◆文档对查询的相关性与文档集合中的其它文档无关，  这点被称为概率模型的相关性独立原则； <br />
+              ◆文档和查询中的标引项与标引项之间是相互独立的； <br />
+              ◆文档和查询中的标引项权重都是二值的，即要么是 0，要么是1； <br />
+              ◆文档相关性是二值的，即只有相关和不相关两种，也就是说，一篇文档要么属于理想相关文档集，要么不属于理想相关文档集</span></p>
+          </div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">3.优缺点</div>
+          <div class="AccordionPanelContent">
+            <ol>
+              <li class="youquedian">优点： 采用了相关反馈原理克服了不确定性推理的缺点，将文档按相关的概率降序排列 </li>
+              <li class="youquedian">缺点： ①参数估计的难度较大； ②标引词Ki在文档中的权重是二值的(要么出  现，要么不出现)； ③文档和查询的表达也比较困难。 </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+var Accordion1 = new Spry.Widget.Accordion("Accordion1");
+var Accordion2 = new Spry.Widget.Accordion("Accordion2");
+var Accordion3 = new Spry.Widget.Accordion("Accordion3");
+</script>
+</body>
+</html>

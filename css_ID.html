@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+</script>
+<style type="text/css">
+.left {
+	font-size: 24px;
+	font-style: oblique;
+	line-height: normal;
+	font-weight: 200;
+	color: #FF0;
+	text-decoration: underline;
+	background-color: #F0F;
+	letter-spacing: normal;
+	word-spacing: normal;
+	height: auto;
+	width: auto;
+}
+.right {
+	font-size: 22px;
+	font-style: italic;
+	font-weight: 400;
+	color: #F93;
+	text-decoration: none;
+	background-color: #F00;
+}
+.txt {
+	font-size: 18px;
+	font-weight: 400;
+	color: #00F;
+	
+}
+
+.txt a {
+	color: #F00;
+}
+#apDiv1 {
+	position: absolute;
+	width: 535px;
+	height: 256px;
+	z-index: 1;
+	left: 228px;
+	top: 512px;
+	text-align: center;
+	color: #00F;
+}
+#xinlangwang {
+	font-size: 14px;
+	color: #000;
+}
+#xinlangwang {
+	color: #333;
+}
+</style></head>
+
+<body>
+<p class="txt">全球新冠肺炎疫情持续发展，在一些国家的疫情出现放缓的迹象之时，一些国家的疫情正在加速蔓延。</p>
+<p class="txt">据澎湃新闻（<a href="http://www.thepaper.cn">点击访问</a>）不完全统计，截至北京时间5月27日7时，中国以外累计确诊病例超过559万例，累计死亡病例超34万例。相较26日19时，国外新增确诊病例6万多例，新增死亡病例3266例。</p>
+<p class="txt">值得注意的是，法国在4月18日、4月24日、5月13日、5月16日、5月26日五次核减了该国的确诊病例总数。据法国政府网站解释，之所以确诊病例总数会下降，是因为法国政府报告的全国确诊病例统计数据存在重复统计。</p>
+<p class="txt">与此同时，英国与西班牙也因同样的缘故分别在5月20日与5月25日核减了该国的统计数据。(<a href="https://www.sina.com.cn" id="xinlangwang">点击访问新浪首页</a>)</p>
+<img src="cov-19.png" width="750" height="287" onclick="MM_effectAppearFade(this, 1000, 100, 0, false)" />
+<div></div>
+<div>
+  <table width="200" border="1">
+    <tr>
+      <th align="center" valign="middle" bgcolor="#FF00FF" class="left" scope="row">现有确诊</th>
+      <th align="center" valign="middle" class="right">125</th>
+    </tr>
+    <tr>
+      <th align="center" valign="middle" bgcolor="#FF00FF" class="left" scope="row">无症状</th>
+      <th align="center" valign="middle" class="right">404</th>
+    </tr>
+    <tr>
+      <th align="center" valign="middle" class="left" scope="row">现有疑似</th>
+      <th align="center" valign="middle" class="right">6</th>
+    </tr>
+    <tr>
+      <th align="center" valign="middle" bgcolor="#FF00FF" class="left" scope="row">现有重症</th>
+      <th align="center" valign="middle" class="right">5</th>
+    </tr>
+    <tr>
+      <th align="center" valign="middle" bgcolor="#FF00FF" class="left" scope="row">累计确诊</th>
+      <th align="center" valign="middle" class="right">84544</th>
+    </tr>
+    <tr>
+      <th align="center" valign="middle" bgcolor="#FF00FF" class="left" scope="row">境外输入</th>
+      <th align="center" valign="middle" class="right">1732</th>
+    </tr>
+    <tr>
+      <th align="center" valign="middle" bgcolor="#FF00FF" class="left" scope="row">累计治愈</th>
+      <th align="center" valign="middle" class="right">79774</th>
+    </tr>
+    <tr>
+      <th align="center" valign="middle" bgcolor="#FF00FF" class="left" scope="row">累计死亡</th>
+      <th align="center" valign="middle" class="right">4645</th>
+    </tr>
+  </table>
+  <div id="apDiv1">身体健康情况上报
+    <form id="form1" name="form1" method="post" action="">
+      <p>您的姓名
+        <label>
+          <input type="text" name="textfield" id="textfield" />
+        </label>
+      </p>
+      <p>您身体是否有异样
+        <label>
+          <input name="textfield2" type="text" id="textfield2" value="否" />
+        </label>
+      </p>
+      <p>您今日体温
+        <label>
+          <input type="text" name="textfield3" id="textfield3" />
+        </label>
+      </p>
+      <p>您有什么要补充的吗
+        <label>
+          <textarea name="textarea" id="textarea" cols="45" rows="5"></textarea>
+        </label>
+      </p>
+      <p>
+        <input type="submit" name="button" id="button" value="提交" />
+      </p>
+    </form>
+  </div>
+</div>
+</body>
+</html>
