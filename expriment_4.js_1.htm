@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+</head>
+<body>
+    <input type="text" name="text" id="pre" onblur="validate(this.value);">
+    <select  id="operator">
+        62616964757a686964616fe4b893e5b19e31333335343432<option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="text" name="text" id="next" onblur="validate(this.value);">
+    <span>=</span>
+    <input type="text" id="result" readonly="true">
+    <input type="button" id="btn" value="submit" onclick="calculator();">
+    <script>
+    function validate(str){
+        var reg = /^\d+$/;              
+               if (!reg.test(str)) {                  
+                   alert("please input number");
+               }
+    }
+    function calculator(){
+        var pre=document.getElementById("pre").value;
+        var next=document.getElementById("next").value;
+        var opra=document.getElementById("operator").value;
+ 
+        var result=0;
+        switch(opra) {
+            case "+":
+                result=parseInt(pre)+parseInt(next);
+                break;
+            case "-":
+                result=parseInt(pre)-parseInt(next);
+                break;
+            case "*":
+                result=parseInt(pre)*parseInt(next);
+                break;
+            case "/":
+                if(parseInt(next)!=0){
+                    result=parseInt(pre)/parseInt(next);
+                }
+                else{
+                    alert("can not be zero");
+                    return;
+                }
+                break;
+            default:
+                break;
+        }
+        document.getElementById("result").value=result;
+    }
+    </script>
+</body>
+</html>
