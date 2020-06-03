@@ -1,85 +1,39 @@
 <html> 
-
 <head> 
-
 <title> stopwatch</title> 
-
 </head> 
-
 <body> 
-
- <form action="somepage.asp"> 
-
-  <input type="text" value="0" name="txt1"/> 
-
-  <input type="button" value="begin" name="btnStart"/> 
-
-  <input type="button" value="reset" name="btnReset"/> 
-
+<form action="somepage.asp"> 
+ <input type="text" value="0" name="txt1"/> 
+ <input type="button" value="begin" name="btnStart"/> 
+ <input type="button" value="reset" name="btnReset"/> 
  </form> 
-
 </body> 
-
 </html> 
-
 <script language="JavaScript" type="text/javascript"> 
-
 <!-- 
-
-
-
 var txt=document.forms[0].elements["txt1"]; 
-
 var btnStart=document.forms[0].elements["btnStart"]; 
-
 var btnReset=document.forms[0].elements["btnReset"] 
-
-
-
 var id; 
-
-
-
 var seed=0; 
-
 btnStart.onclick=function(){ 
-
   if(this.value=="begin"){ 
-
     this.value="stop"; 
-
     btnReset.disabled=true; 
-
     id=window.setInterval(tip,10); 
-
   }else{ 
-
     this.value="begin"; 
-
     btnReset.disabled=false; 
-
     window.clearInterval(id); 
-
   } 
-
 } 
-
-
 btnReset.onclick=function(){ 
-
   seed=0; 
-
 } 
-
-
 function tip(){ 
-
   seed++; 
-
   txt.value=seed/100; 
-
 } 
-
 //--> 
-
 </script>
